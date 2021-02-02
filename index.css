@@ -1,0 +1,123 @@
+@import url(headerFooter.css);
+
+.newsContainer{
+    padding-top: 70px;
+}
+.topStoryWrapper{
+    min-height: 100%;
+    align-items: flex-start;
+    border-top: 10px  solid #e10600;
+    border-right: 10px solid #e10600;
+    border-top-right-radius: 15px;
+    margin-top: 20px;
+}
+
+.topStory{
+    margin-top: 20px;
+    margin-bottom: 20px;  
+    max-height: 100%;
+    top: 5rem;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+/* make the topstory link image zoon in */
+.topStoryLink{
+    color: #000;
+}
+.topStoryLink:hover{
+    color: #000;
+}
+.topStoryLink:hover > .storyImage img{
+    transform: scale(1.06);
+    transition: .5s; /*animation*/
+}
+/* keep topstory from scrolling */
+
+/*make other news stories appear in two columns 
+by using flex-wrap in the container*/
+.otherNewsContainer{
+    overflow: auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.featureArticle{
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.navHeader{
+    background: #e10600;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+/*adding hover zoom to images and captions animations*/
+.newsLink, .newsLink:hover{
+    text-decoration: none;
+    color: black;
+}
+/*make image zoom without spilling over*/
+.newsLink:hover > .storyImage img{
+    transform: scale(1.06);
+    transition: .5s; /*animation*/
+
+}
+/*make caption rise*/
+.newsLink:hover > .caption{
+    margin-top: -15px;
+    overflow: visible;
+    padding-bottom: 45px;
+    border-color: #e10600;
+}
+/*
+.featureArticle img{
+    position: relative;
+    transition: .5s;/*animation
+}
+*/
+.storyImage{
+    overflow: hidden;
+   
+
+}
+.topStory img{
+    overflow: hidden;
+    position: relative;
+    transition: .5s;/*animation*/
+}
+.topStory img:hover/*, .storyImage img:hover*/{
+    transform: scale(1.06);
+}
+
+.caption{
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px 15px 30px;
+    border-right: 1px solid ;
+    border-bottom: 1px solid;
+    border-bottom-right-radius: 15px;
+    border-color: #d0d0d2;
+    transition: .5s;
+    position: relative;
+    overflow: visible;
+
+}
+/*caption animation
+.newsLink, .caption:hover{
+    margin-top: -15px;
+    overflow: visible;
+    padding-bottom: 45px;
+    border-color: #e10600;
+    
+    
+}*/
+
+

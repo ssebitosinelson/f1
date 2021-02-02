@@ -1,0 +1,254 @@
+html,body{
+    height: auto;
+    min-height: 100%;
+    margin: 0;
+}
+body{
+    font-size: 17px;
+    font-family: "Titillium Web";
+    line-height: 23px;
+}
+.main{
+    padding: 0px !important;
+}
+.navlist{
+    position: relative;
+}
+.navlist a{
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 8px 13px 13px;
+    font-size: 20px;
+    
+   
+}
+li .navlist{
+    padding: 10px 10px 10px 0px;
+}
+.navlist a:hover{
+    color: #fff;
+    background: #15151E;
+    text-decoration: none;
+    
+}
+a.active .linkText{
+    padding: 0px 10px 10px 0px;
+    border: 1px solid white;
+    border-top: 0;
+    border-left: 0;
+    border-bottom-right-radius: 10px;
+}
+a.active .linkText:hover{
+    padding: 0px 10px 10px 0px;
+    border: 1px solid #15151E;
+    border-top: 0;
+    border-left: 0;
+    border-bottom-right-radius: 10px;
+}
+
+.topStory{
+    margin-top: 20px;
+    border-top: 10px  solid #e10600;
+    border-right: 10px solid #e10600;
+    border-top-right-radius: 15px;
+    height: 100%;
+    max-height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+/*make other news stories appear in two columns 
+by using flex-wrap in the container*/
+.otherNewsContainer{
+    overflow: auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.featureArticle{
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.navHeader{
+    background: #e10600;
+    color: #fff;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+/*adding hover zoom to images and captions animations*/
+.newsLink, .newsLink:hover{
+    text-decoration: none;
+    color: black;
+}
+/*make image zoom without spilling over*/
+.newsLink:hover > .storyImage img{
+    transform: scale(1.06);
+    transition: .5s; /*animation*/
+
+}
+/*make caption rise*/
+.newsLink:hover > .caption{
+    margin-top: -15px;
+    overflow: visible;
+    padding-bottom: 45px;
+    border-color: #e10600;
+}
+/*
+.featureArticle img{
+    position: relative;
+    transition: .5s;/*animation
+}
+*/
+.storyImage{
+    overflow: hidden;
+   
+
+}
+.topStory img{
+    overflow: hidden;
+    position: relative;
+    transition: .5s;/*animation*/
+}
+.topStory img:hover/*, .storyImage img:hover*/{
+    transform: scale(1.06);
+}
+
+.caption{
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px 15px 30px;
+    border-right: 1px solid ;
+    border-bottom: 1px solid;
+    border-bottom-right-radius: 15px;
+    border-color: #d0d0d2;
+    transition: .5s;
+    position: relative;
+    overflow: visible;
+
+}
+/*caption animation
+.newsLink, .caption:hover{
+    margin-top: -15px;
+    overflow: visible;
+    padding-bottom: 45px;
+    border-color: #e10600;
+    
+    
+}*/
+
+
+#logo{
+    padding: 10px;
+    width: 80%;
+
+}
+/*styling the footer*/
+.f1-footer{
+    background-color: #15151E;
+    color: #fff;
+}
+.f1-footer ul{
+    list-style-type: none;
+    
+}
+/*coloring font awesome icons and all footer links*/
+.f1-footer a{
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 3px;
+    
+}
+
+
+.f1-footer a:hover{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid #e10600;
+    padding-bottom: 0px;
+}
+/*resizing font awesome icons*/
+
+.social{
+    float:right;
+    text-align: right;
+    justify-content: space-between;    
+    color: #fff;
+    height: 100%;
+    font-size: 20px;
+}
+.icon{
+    
+}
+
+.f1-footer-top{
+    background-color: #38383f;
+    padding-top: 10px;
+}
+.f1-footer-middle{
+    padding-top: 5px;
+    margin: 20px;
+    border-bottom: 10px  solid #38383f;
+    border-right: 10px solid #38383f;
+    border-bottom-right-radius: 15px;
+    background: #15151E;
+}
+/*style the bottom nav*/
+.navbottom{
+    padding-bottom: 10px;
+    margin: 0;
+   
+}
+.navbottom a{
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+.f1-footer-bottom{
+    margin-left: 20px;
+}
+.bottomlist{
+   padding-left: 0px;
+    margin-bottom: 0px;
+}
+.bottomlist ul{
+    list-style-type: none;
+    padding-left: 0px ;
+}
+.bottomlist li{
+    padding: 10px 25px 10px 0px;
+    font-size: 12px;
+}
+.storeLink{
+    width: 135px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.label{
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #e10600;
+}
+
+.storeLabel{
+    max-width: 105px;
+    margin: 4px 0px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 15px;
+    font-weight: normal;
+}
+

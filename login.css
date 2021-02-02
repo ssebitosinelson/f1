@@ -1,0 +1,47 @@
+@import url(headerFooter.css);
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 2px solid #d0d0d2;
+    border-left: 2px solid #d0d0d2;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.signup {
+    top: 3.3rem;
+    padding: 15px 10px 10px 0px;
+    padding-left: 0px !important;
+    border-top: 10px solid #e10600;
+    border-right: 10px solid #e10600;
+    border-top-right-radius: 25px;
+    margin-top: 40px;
+}
+
+input[type=button] {
+    color: #fff;
+    background: #e10600;
+    border: #e10600 2px solid;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 20%;
+    padding: 5px;
+}
+
+input[type=button]:hover {
+    color: #e10600;
+    background: #fff;
+}
+form a{
+    margin-left: 200px;
+    font-weight: 600;
+    color: #e10600;
+}
+form a:hover{
+    font-weight: 600;
+    color: #e10600;
+    text-decoration-color: #e10600 2px;
+    
+}

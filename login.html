@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Login/Signup</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navHeader loginNavHeader d-flex">
+            <div class="col-md-2 ">
+                <img id="f1-logo" src="f1_logo_red.svg" alt="">
+            </div>
+
+        </div>
+        
+
+        <div class="signup col-md-5 offset-md-3">
+            <form id="logForm">
+                <h1>LOG IN</h1>
+                <label for="email"> Email</label>
+                <input type="text" name="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <input type="button" name="log in" id="login" value="Login" onclick="validate()">
+                <a href="register.html" class="swapForm" >Dont'
+                    have an account?</a>
+            </form>
+        </div>
+    </div>
+    <script>
+        //function to validate the sign up form
+        function validate() {
+
+            let password = document.getElementById("password").value;
+            let email = document.getElementById("email").value;
+
+
+            if(email === "" && password == ""){
+alert("Please enter your password and email");
+            }else if(email == ""){
+                alert("Please enter Your email");
+            }else if(password ==""){
+                alert("please enter your password");
+            }else if(email != "lewis.hamilton@mercedes.com" || password !="6timechamp"){
+                alert("incorrect password or email");
+            }else{
+                window.open('index.html', '_self');
+            }
+            //compare both passwords input by user
+            let passVal = password.localeCompare(rePass);
+
+            if (password == "" && rePass == "" && lName == "" && fName == "" && email == "") {
+                alert("You cannot submit an empty form");
+            }
+            else if (password == "" || rePass == "" || lName == "" || fName == "" || email == "") {
+                if (password == "") {
+                    alert("Please select a password");
+                } else if (rePass == "") {
+                    alert("please reenter your password");
+                } else if (fName == "") {
+                    alert("Please enter your First name");
+                } else if (lName == "") {
+                    alert("Please enter your Last Name");
+                } else {
+                    alert("Please provide your email");
+                }
+            } else if (passVal != 0) {
+                alert("Your passwords do not match");
+            }
+            else {
+                window.open("index.html", "_self");
+            }
+
+        }
+
+    </script>
+    
+</body>
+
+</html>

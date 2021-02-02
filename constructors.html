@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="standings.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/678af57af1.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Race Results</title>
+</head>
+
+<body>
+    <div class="main col-12">
+            <div class="navWrapper">
+                    <div class="f1-logo">
+                        <img id="logo" src="f1_logo.svg" alt="">
+                    </div>
+                    <div class="navHeader ">
+                        <div class="navlist" id="navlist">
+                            <a class="navlink" href="index.html"><span class="linkText">Latest</span></a>
+                            <a class="active standings" id="standings" href="standings.html"><span class="linkText">Standings
+                                    <i class="fa fa-caret-down"></i></span></a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li> <a class="navlink" href="standings.html"><span class="linkText">2019 Season</span></a>
+                                    </li>
+                                    <li><a class="navlink" href="driversChampionship.html"><span class="linkText">Drivers
+                                                Standings</span></a></li>
+                                    <li><a class="navlink" href="constructors.html"><span class="linkText">Constructor
+                                                Standings</span></a></li>
+                                </ul>
+                            </div>
+                            <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
+                            <a class="navlink" href="Teams.html"><span class="linkText">Teams</span></a>
+                            
+        
+                            <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+        
+                        </div>
+        
+                    </div>
+                </div>
+        <div class="tableCard">
+            <div class="teamsWrapper">
+                <h1>2019 Constructor Standings</h1>
+                <table>
+                    <tr>
+                        <th>POS</th>
+                        <th>TEAM</th>
+                        <th>PTS</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>MERCEDES</td>
+                        <td>739</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>FERRARI</td>
+                        <td>504</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>RED BULL RACING HONDA</td>
+                        <td>417</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>MCLAREN RENAULT</td>
+                        <td>145</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>RENAULT</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>SCUDERIA TORO ROSSO HONDA</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>RACING POINT BWT MERCEDES</td>
+                        <td>73</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>ALFA ROMEO RACING FERRARI</td>
+                        <td>57</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>HAAS FERRARI</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>WILLIAMS MERCEDES</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer class="f1-footer">
+                <div class="f1-footer-top d-flex">
+                    <p class="label storeLabel ">DOWNLOAD THE OFFICIAL F1 APP</p>
+                    <ul class="d-flex">
+                        <li class="storeLink">
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.softpauer.f1timingapp2014.basic&hl=en_GB">
+                                <img
+                                    src="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
+                            </a>
+                        </li>
+                        <li class="storeLink">
+                            <a href="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
+                                <img src="https://www.formula1.com/etc/designs/fom-website/images/svg/download-on-the-app-store-apple.svg"
+                                    alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="social col-md-5 ml-auto">
+                        <!-- <ul class=" d-table float-md-right d-flex">-->
+    
+                        <a href="https://www.facebook.com/Formula1">
+                            <i class="icon fab fa-facebook-square fa-2x"></i>
+                        </a>
+    
+    
+                        <a href="https://twitter.com/f1">
+                            <i class="icon fab fa-twitter-square fa-2x"></i>
+                        </a>
+    
+    
+                        <a href="https://www.instagram.com/f1/">
+                            <i class="icon fab fa-instagram fa-2x"></i>
+                        </a>
+    
+    
+                        <a href="https://www.youtube.com/F1">
+                            <i class="icon fab fa-youtube-square fa-2x"></i>
+                        </a>
+    
+                        <!--</ul>-->
+                    </div>
+                </div>
+                <div class="f1-footer-middle ">
+                    <div class="navbottom  navlist d-flex">
+    
+                        <a class="bottomLinks active" href="#">Latest</a>
+                        <a class="bottomLinks" href="standings.html">Standings</a>
+                        <a class="bottomLinks" href="drivers.html">Drivers</a>
+                        <a class="bottomLinks" href="Teams.html">Teams</a>
+                        <a class="bottomLinks" href="Races.html">Races</a>
+    
+                    </div>
+                </div>
+                <div class="f1-footer-bottom">
+                    <ul class="bottomlist d-flex offset-md-2">
+                        <li>CONTACT</li>
+                        <li>FAQ</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>GUIDLINES</li>
+                        <li>TERMS OF USE</li>
+                        <li>PARTNERS</li>
+                        <li>BEYOND THE GRID</li>
+                        <li>INNOVATION </li>
+                    </ul>
+                </div>
+            </footer>
+    </div>
+    <script src="responsiveNav.js"></script>
+
+</body>
+
+</html>
