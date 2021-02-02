@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Login/Signup</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navHeader loginNavHeader d-flex">
+            <div class="col-md-2 ">
+                <img id="f1-logo" src="f1_logo_red.svg" alt="">
+            </div>
+
+        </div>
+      
+
+        <div class="signup col-md-5 offset-md-3">
+            <!--use onsubmit to call the validate function-->
+            <form id="regForm">
+                <h1>SIGN UP</h1>
+                <label for="fName">First Name</label>
+                <input type="text" name="fName" id="fName">
+                <label for="lName">Last Name</label>
+                <input type="text" name="lName" id="lName">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="passReg">Password</label>
+                <input type="password" name="passReg" id="passReg">
+                <label for="rePassReg">Re-Enter Password</label>
+                <input type="password" name="rePassReg" id="rePassReg">
+                <input type="button" name="sign up" value="Sign Up" id="signup" onclick="validate()" />
+                <a href="login.html">Already Have an account?</a>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        //function to validate the sign up form
+        function validate() {
+
+            let password = document.getElementById("passReg").value;
+            let rePass = document.getElementById("rePassReg").value;
+            let lName = document.getElementById("lName").value;
+            let fName = document.getElementById("fName").value;
+            let email = document.getElementById("email").value;
+            let signup = document.getElementById("signup");
+            let action = document.getElementById("regForm");
+
+            //compare both passwords input by user
+            let passVal = password.localeCompare(rePass);
+
+            if (password == "" && rePass == "" && lName == "" && fName == "" && email == "") {
+                alert("You cannot submit an empty form");
+            }
+            else if (password == "" || rePass == "" || lName == "" || fName == "" || email == "") {
+                if (password == "") {
+                    alert("Please select a password");
+                } else if (rePass == "") {
+                    alert("please reenter your password");
+                } else if (fName == "") {
+                    alert("Please enter your First name");
+                } else if (lName == "") {
+                    alert("Please enter your Last Name");
+                } else {
+                    alert("Please provide your email");
+                }
+            } else if (passVal != 0) {
+                alert("Your passwords do not match");
+            }
+            else {
+                window.open("index.html", "_self");
+            }
+
+        }
+
+    </script>
+    
+</body>
+
+</html>
